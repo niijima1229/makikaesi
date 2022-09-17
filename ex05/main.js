@@ -12,20 +12,6 @@ const dict = [
   { num: 10, text: "ten" },
 ];
 
-const example = [5, -8, 10, 0 - 10, -1];
+const example = [5, -8, 10, 0, -10, -1];
 
-function showDict() {
-  example.forEach((num) => myfunc(num));
-}
-
-function myfunc(num) {
-  let text = "";
-  dict.forEach((element) => {
-    if (num === element.num) {
-      text = element.text;
-    }
-  });
-  console.log(`${num < 0 ? "minus " : ""}${text}`);
-}
-
-showDict();
+// この下に関数を書くこと
