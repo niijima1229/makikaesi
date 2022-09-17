@@ -15,6 +15,17 @@ const dict = [
 const example = [5, -8, 10, 0 - 10, -1];
 
 function showDict() {
-  example.forEach();
+  example.forEach((num) => myfunc(num));
 }
-example.forEach();
+
+function myfunc(num) {
+  let text = "";
+  dict.forEach((element) => {
+    if (num === element.num) {
+      text = element.text;
+    }
+  });
+  console.log(`${num < 0 ? "minus " : ""}${text}`);
+}
+
+showDict();
